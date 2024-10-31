@@ -18,7 +18,6 @@ namespace Examen1
             HiloHexadecimal.Start();
             HiloBinario.Start();
             HiloOctal.Start();
-
             Console.ReadLine();
         }
 
