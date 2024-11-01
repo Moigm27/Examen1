@@ -10,7 +10,7 @@ namespace Examen1
     internal class Program
     {
 
-        private static int numero = 24;
+        private static int numero = 40;
         private static readonly object bloqueo = new object();
 
 
@@ -25,11 +25,12 @@ namespace Examen1
         private static void Hexadecimal()
         {
             lock (bloqueo)
-            {
+            {             
+                
                 Console.WriteLine("convirtiendo a hexadecimal.......");
                 Thread.Sleep(5000);
                 Console.WriteLine($"Hexadecimal: {Convert.ToString(numero, 16)}");
-                Console.WriteLine("");
+                Console.WriteLine("");                                
             }
         }
         private static void Binario()
