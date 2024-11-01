@@ -27,7 +27,7 @@ namespace Examen1
             lock (bloqueo)
             {             
                 
-                Console.WriteLine("convirtiendo a hexadecimal.......");
+                Console.WriteLine("convirtiendo el numero:  "+numero+" a hexadecimal .......");
                 Thread.Sleep(5000);
                 Console.WriteLine($"Hexadecimal: {Convert.ToString(numero, 16)}");
                 Console.WriteLine("");                                
@@ -37,7 +37,7 @@ namespace Examen1
         {
             lock (bloqueo)
             {
-                Console.WriteLine("convirtiendo a Binario.....");
+                Console.WriteLine("convirtiendo el numero  "+numero+" a Binario.....");
                 Thread.Sleep(5000);
                 int Decimal = numero;
                 if (Decimal == 0) Decimal = 0;                                    
@@ -56,7 +56,7 @@ namespace Examen1
         {
             lock (bloqueo)
             {
-                Console.WriteLine("convirtiendo a Octal......");
+                Console.WriteLine("convirtiendo el numero "+numero+" a Octal......");
                 int Decimal = numero;
                 string octal = "";
                 if (Decimal == 0) octal= "0";
