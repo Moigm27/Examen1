@@ -27,9 +27,9 @@ namespace Examen1
             lock (bloqueo)
             {             
                 
-                Console.WriteLine("convirtiendo el numero:  "+numero+" a hexadecimal .......");
+                Console.WriteLine("convirtiendo el numero "+numero+" a hexadecimal .......");
                 Thread.Sleep(5000);
-                Console.WriteLine($"Hexadecimal: {Convert.ToString(numero, 16)}");
+                Console.WriteLine($"Resultado en hexadecimal: "+ Convert.ToString(numero, 16)+"");
                 Console.WriteLine("");                                
             }
         }
@@ -37,7 +37,7 @@ namespace Examen1
         {
             lock (bloqueo)
             {
-                Console.WriteLine("convirtiendo el numero  "+numero+" a Binario.....");
+                Console.WriteLine("convirtiendo el numero "+numero+" a Binario.....");
                 Thread.Sleep(5000);
                 int Decimal = numero;
                 if (Decimal == 0) Decimal = 0;                                    
